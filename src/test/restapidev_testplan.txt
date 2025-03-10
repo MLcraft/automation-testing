@@ -1,0 +1,34 @@
+TEST CASES
+GET - list all objects
+assert - expected objects and size of results
+
+GET - list of objects by IDs
+assert - correct objects for given IDs
+assert - error response for single invalid ID
+assert - error response for multiple IDs of which some are invalid
+
+GET - single object
+assert - correct object returned
+assert - error response for invalid ID
+
+POST - add object
+assert - correct object added (check for object exists before and after adding)
+assert - error response for incorrect object format
+assert - error response for incorrect field data type
+
+PUT - update object
+assert - correct object is updated
+assert - error response when object doesn't exist
+assert - error response for incorrect object format (missing fields)
+assert - error response for incorrect object format (non-existing field)
+assert - error response for incorrect field data type
+
+PATCH - partially update object
+assert - correct object is partially updated
+assert - error response when object doesn't exist
+assert - error response for incorrect object format
+assert - error response for incorrect field data type
+
+DELETE - delete object
+assert - correct object deleted
+assert - error response when object doesn't exist
